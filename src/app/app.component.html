@@ -1,0 +1,19 @@
+<div class="col-md-6">
+   <div class="row"  *ngIf="showMsg">
+        <div class="col-xs-12">
+          <p class="alert alert-success">
+              <strong>Registration Success!</strong>
+          </p>
+        </div>
+      </div>
+
+         <div class="row" [style.display]="Test"  *ngIf="!showMsg">
+        <div class="col-xs-12">
+          <p class="alert alert-danger">
+              <strong>Registration failure!</strong>
+          </p>
+        </div>
+      </div>
+
+    <button class="btn btn-success" (click)="onSubmit()">Add user</button>
+</div>
